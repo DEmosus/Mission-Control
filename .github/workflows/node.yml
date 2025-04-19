@@ -26,7 +26,3 @@ jobs:
 
       - name: Build project
         run: npm run build --prefix nasa-front-end
-
-      - name: Deploy to production (if needed)
-        if: github.ref == 'refs/heads/main'
-        run: npm run deploy --if-present
