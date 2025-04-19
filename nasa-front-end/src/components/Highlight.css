@@ -1,0 +1,12 @@
+.custom-highlight {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: rgba(161, 236, 251, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-highlight:hover {
+  background-color: rgba(161, 236, 251, 0.5);
+  transform: scale(1.05);
+}

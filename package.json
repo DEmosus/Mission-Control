@@ -1,0 +1,21 @@
+{
+  "name": "nasa-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-server": "npm install --prefix nasa-back-end",
+    "install-client": "npm install --prefix nasa-front-end",
+    "install": "npm install --prefix nasa-back-end && npm install --prefix nasa-front-end",
+    "server": "npm run watch --prefix nasa-back-end",
+    "client": "npm run dev --prefix nasa-front-end",
+    "watch": "concurrently \"npm run server\" \"npm run client\"",
+    "deploy": "npm run build --prefix nasa-front-end && npm start --prefix nasa-back-end",
+    "deploy-cluster": "npm run build --prefix nasa-front-end && npm run cluster --prefix nasa-back-end",
+    "test": "npm run test --prefix nasa-back-end && npm run test --prefix nasa-front-end"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
