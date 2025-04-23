@@ -1,0 +1,36 @@
+.git
+
+*/node_modules
+
+nasa-back-end/public
+nasa-back-end/dist
+
+# Ignore node_modules to prevent large unnecessary copies
+node_modules
+nasa-front-end/node_modules
+nasa-back-end/node_modules
+
+# Ignore environment files containing secrets
+# .env
+# .env.local
+# .env.production
+# .env.development
+
+# Ignore logs
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+*.log
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore build artifacts
+dist/
+nasa-front-end/dist/
+nasa-back-end/dist/
+
+# Ignore Docker-specific artifacts
+Dockerfile*
+.dockerignore
